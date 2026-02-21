@@ -21,4 +21,17 @@ if(BUILD_TESTING)
   ament_lint_auto_find_test_dependencies()
 endif()
 
+add_executable(tf_broadcaster src/tf_broadcaster.cpp)
+
+ament_target_dependencies(tf_broadcaster
+  rclcpp
+  tf2_ros
+  geometry_msgs
+)
+
+install(TARGETS
+  tf_broadcaster
+  DESTINATION lib/${PROJECT_NAME}
+)
+
 ament_package()
