@@ -8,6 +8,9 @@
   <license>Apache-2.0</license>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
+  <depend>rclcpp</depend>
+  <depend>tf2_ros</depend>
+  <depend>geometry_msgs</depend>
 
   <!-- TODO: Add dependencies for rclcpp, tf2_ros, geometry_msgs -->
 
